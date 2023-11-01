@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebBanHangOnline.Models.EF.ProductCategory>
+
+@if (Model !=null && Model.Any())
+ {
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="banner_item align-items-center" style="background-image: url('../../Content/asset/images/thiet-bi-ve-sinh-platinum-tai-ha-giang-400x250.jpg');">
+                    <div class="banner_category">
+                        <a href="/san-pham">Bồn rửa mặt</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="banner_item align-items-center" style=" background-image: url('../../Content/asset/images/Platinum.jpg');">
+                    <div class="banner_category">
+                        <a href="/san-pham">Bồn cầu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="banner_item align-items-center" style=" background-image: url('../../Content/asset/images/banner_2.jpg');">
+                    <div class="banner_category">
+                        <a href="/san-pham">Vòi hoa sen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}

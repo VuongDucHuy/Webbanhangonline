@@ -1,0 +1,22 @@
+namespace WebBanHangOnline.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class Order : DbMigration
+    {
+        public override void Up()
+        {
+            AddColumn("dbo.tb_Order", "CreatedBy", c => c.String());
+            AddColumn("dbo.tb_Order", "ModifiedDate", c => c.DateTime(nullable: false));
+            AddColumn("dbo.tb_Order", "CreatedDate", c => c.DateTime(nullable: false));
+        }
+        
+        public override void Down()
+        {
+            DropColumn("dbo.tb_Order", "CreatedDate");
+            DropColumn("dbo.tb_Order", "ModifiedDate");
+            DropColumn("dbo.tb_Order", "CreatedBy");
+        }
+    }
+}
